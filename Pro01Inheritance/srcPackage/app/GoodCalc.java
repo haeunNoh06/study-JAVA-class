@@ -1,6 +1,8 @@
-package in09;
+package app;
 
-public class GoodCalc extends Calulator{
+import lib.Calculator;
+
+public class GoodCalc extends Calculator{
 
 	// 추상클래스에서 상속받은 추상메서드는
 	// GoodCalc 클래스에서 반드시 구현해야 한다
