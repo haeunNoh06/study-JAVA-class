@@ -22,15 +22,7 @@ public class RandomEx {
 		for ( int i = 1; i <= 6; i++) {
 			int num = (int)(Math.random()*6+1);
 			System.out.println(i+"번째 주사위 : "+num);
-			switch(num) {
-			case 1: sum+=500; break;
-			case 2: sum+=1000; break;
-			case 3: sum+=1500; break;
-			case 4: sum+=2000; break;
-			case 5: sum+=2500; break;
-			case 6: sum+=3000;
-			
-			}
+			sum += i*500;
 		}
 		System.out.println("SUM : "+sum);
 	}

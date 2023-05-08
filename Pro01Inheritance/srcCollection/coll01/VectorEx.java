@@ -4,6 +4,13 @@ import java.util.Vector;
 
 public class VectorEx {
 
+	public static void printVector(Vector<Integer> v2) {	// Vector<Integer> v2 = v와 같다.
+		for ( int i = 0; i < v2.size(); i++) {
+			int n = v2.get(i);
+			System.out.println(n+" ");
+		}
+	}
+	
 	public static void main(String[] args) {
 		Vector<Integer> v = new Vector<>();
 		
@@ -16,10 +23,11 @@ public class VectorEx {
 		System.out.println("벡터내의 요소 객체 수 : "+v.size());
 		System.out.println("벡터의 현재 용량 : "+v.capacity());
 		
+		printVector(v);
 		
-		for ( int i = 0; i < v.size(); i++) {
-			System.out.println(v.get(i));
-		}
+//		for ( int i = 0; i < v.size(); i++) {
+//			System.out.println(v.get(i));
+//		}
 		int sum = 0;
 		for ( int i = 0; i < v.size(); i++) {
 			sum += v.elementAt(i);
