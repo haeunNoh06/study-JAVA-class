@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="srcInheritance"/>
 	<classpathentry kind="src" path="srcPackage"/>
 	<classpathentry kind="src" path="srcCollection"/>
+	<classpathentry kind="src" path="srcFileInputOutput"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
