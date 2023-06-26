@@ -2,6 +2,7 @@ package in08;
 
 public class Shape {
 	protected String name;
+	
 	public void paint() {
 		draw();
 	}

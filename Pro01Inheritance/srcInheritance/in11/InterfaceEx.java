@@ -10,5 +10,5 @@ class InterfaceEx {
 		System.out.println("3과 5를 더하면 "+phone.calculator(3, 5));
 		phone.schedule();
 	}
-
+	
 }

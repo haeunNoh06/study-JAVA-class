@@ -17,14 +17,17 @@ public class FileReaderEx {
 			fin = new FileReader("c:\\Windows\\system.ini");
 			int c;
 			
-			// fin이 가리키는 파일에서 한 문자씩
+			// fin이 가리키는 파일(system.ini)에서 한 문자씩
 			// 읽어서 c에 저장하고, fin객체변수가 파일의 끝에 도달하면 -1의 값ㅇ르
 			// c에게 넘겨준다.
 			// -1은 파일의 끝을 의미한다.
 			// 그래서 true를 반환하면 파일의 끝까지 읽어서 화면에 출력한다.
 			while ( (c = fin.read()) != -1) {
-				System.out.print((char)c);
+				System.out.print((char)c);	// c의 값은 정수형이기 때문에 char형으로 변환해야 한다
+				
 			}
+			// 파일을 닫아준다. fin객체변수를 더 이상 사용하지 않겠다.
+			// "system.ini" 파일을 사용하지 않겠다.
 			fin.close();
 		} catch (Exception e) {
 			System.out.println("입출력 오류");

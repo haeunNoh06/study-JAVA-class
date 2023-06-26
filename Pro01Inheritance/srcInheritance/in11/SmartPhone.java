@@ -4,6 +4,7 @@ package in11;
 // 그렇게 구현한 PDA를 SmartPhone이 상속받음
 class SmartPhone extends PDA implements MobilePhoneInterface, MP3Interface{
 
+	// MobilePhoneInterface의 추상메서드 재정의
 	@Override
 	public void sendCall() {
 		System.out.println("따르릉따르릉");

@@ -2,6 +2,7 @@ package in12;
 
 public class Radio implements Sound{
 	private int SndLevel;
+	
 	public Radio() {
 		SndLevel = 0;
 	}
